@@ -1,0 +1,134 @@
+/* 
+    底部样式
+*/
+#footer{
+    // background: #223143;
+    background:rgba(37,46,51,1);
+    font-size: 14px;
+    color: #C1CCDA;
+    .footer-content{
+        width: 1200px;
+        margin: 0 auto;
+        .footer-top{
+            display: flex;
+            justify-content: space-between;
+            padding-top:30px;
+            .footer-top-l{
+                .footer-top-l-link{
+                    display: flex;               
+                    a{
+                        line-height: 40px;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                        color: #C1CCDA;
+                        margin-right: 50px;
+                    }
+                    a:hover{
+                        color:#49CCFF;
+                    }
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 30px;
+                    color:#8D9FB4;
+                }
+            }
+            .footer-top-r{
+                .footer-logo{
+                   width:100%;
+                   text-align: right;
+                   a{
+                        display: inline-block;
+                       background: url('../assets/logo_white.svg') no-repeat 100% 100%;
+                        width:110px;
+                        height: 26px;
+
+                        background-repeat:no-repeat;
+                        background-size: contain;
+                        background-position: top right;
+                   }
+                }
+                p{
+                    line-height: 50px;
+                    font-size:12px;
+                }
+            }
+        }
+        .order-link{
+            line-height: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .order-link-l{
+                padding-top:25px;
+                a{
+                    display: inline-block;
+                    margin-right: 28px;
+                    width: 14px;
+                    height: 12px;
+                    color:transparent;
+                    transition: all 0.3s ease-in-out; 
+                }
+                a:nth-child(1){
+                    background: url('../assets/01_01.contact_icon0101.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(2){
+                    background: url('../assets/01_01.contact_icon0201.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(3){
+                    background: url('../assets/01_01.contact_icon0301.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(4){
+                    background: url('../assets/01_01.contact_icon0401.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(1):hover{
+                    background: url('../assets/01_01.contact_icon0102.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(2):hover{
+                    background: url('../assets/01_01.contact_icon0202.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(3):hover{
+                    background: url('../assets/01_01.contact_icon0302.svg') no-repeat 100% 100%;
+                }
+                a:nth-child(4):hover{
+                    background: url('../assets/01_01.contact_icon0402.svg') no-repeat 100% 100%;
+                }
+            }
+            .order-link-r{
+                font-size: 12px;
+                color: #8D9FB4;
+            }
+        }
+        .ant-divider{
+            background:  #8D9FB4;
+            opacity: 0.1;
+        }
+        .footer-bottom{
+           padding-bottom: 30px;
+            h4{
+                font-size: 12px;
+                color: #C1CCDA;
+                float: left;
+                height: 24px;
+                line-height: 24px;
+            }
+            .footer-bottom-r{
+                float: left;
+                margin-left: 35px;
+                height: 24px;
+                line-height: 24px;
+                a{
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #8D9FB4;
+                    margin-right: 40px;
+                    transition: all 0.3s ease-in-out;
+                }
+                a:hover{
+                    color:#49CCFF;
+                }
+            }
+        }
+    }
+}

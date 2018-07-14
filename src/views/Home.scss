@@ -1,0 +1,26 @@
+/* 
+    Home页样式
+*/
+#home{
+    // background: #fff;
+    background:rgba(244,245,246,1);
+    .ant-carousel {
+        .slick-slide {
+            text-align: center;
+            height: auto;
+            line-height: auto;
+            overflow: hidden;
+           
+        }
+    }
+    .frameWork{
+        height: 500px;
+        text-align: center;
+        background: rgb(69, 66, 119);
+        font-size: 32px;
+        color:transparent;
+      // background: url('../assets/banners.jpg') no-repeat 100% 100%;
+       background-size: 100% 100%;
+    }
+  
+}
