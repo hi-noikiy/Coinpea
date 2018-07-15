@@ -185,7 +185,7 @@ export class MyInvite extends Component {
                 <div className="rule">
                     <h4>活动细则</h4>
                     <ul>
-                        <li>•<span>活动期间可获得50%佣金返利，后续将根据实际情况对佣金比例进行调整。</span></li>
+                        <li>•<span>活动期间可获得20%佣金返利，后续将根据实际情况对佣金比例进行调整。</span></li>
                         <li>•<span>一旦您推荐的人成功完成交易，佣金就会立刻返到您的账户。</span></li>
                         <li>•<span>我们保留随时对返佣活动规则进行调整的权利，但是对您推荐的好友数量没有限制。</span></li>
                         <li>•<span>被推荐人必须使用您的推荐链接、二维码或者推荐ID注册才可以。</span></li>
