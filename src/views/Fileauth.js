@@ -11,7 +11,7 @@ export default class Fileauth extends Component {
 			'top': 0,
 			'zIndex': 999,
 			'width': '2000px',
-			'height': '500px',
+			'height': '1500px',
 			'background': '#fff',
 			'paddingLeft': '10px'
 
