@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 export default class Socket extends React.Component {
 
     componentDidMount() {
-        const socket = io('http:47.94.194.143/coinex-interface/trade');
+        const socket = io('https://www.coinex8.com/coinex-interface/trade');
      
         socket.on('connect', () => {
                 if(socket.connected) {

@@ -31,8 +31,8 @@ class TradeviewPage extends Component {
     }
     window.ws.onclose =  ()  => {
         if(!window.wsClose) {
-            const wsUrl = window.location.hostname === 'localhost' ? '47.94.194.143' :  '47.94.194.143' ;
-            this.websocketUrl = `ws://${wsUrl}/coinex-interface/kline`;
+            const wsUrl = window.location.hostname === 'localhost' ? 'www.coinex8.com' :  window.location.hostname ;
+            this.websocketUrl = `wss://${wsUrl}/coinex-interface/kline`;
             window.ws = new WebSocket(this.websocketUrl);
         }
     }
@@ -80,8 +80,8 @@ class TradeviewPage extends Component {
   
   // 开启websocket
   websocketStart = () => {
-        const wsUrl = window.location.hostname === 'localhost' ? '47.94.194.143' :  '47.94.194.143' ;
-        this.websocketUrl = `ws://${wsUrl}/coinex-interface/kline`;
+        const wsUrl = window.location.hostname === 'localhost' ? 'www.coinex8.com' :  window.location.hostname ;
+        this.websocketUrl = `wss://${wsUrl}/coinex-interface/kline`;
         window.ws = new WebSocket(this.websocketUrl);
   }
 

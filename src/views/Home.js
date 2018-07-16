@@ -156,7 +156,7 @@ class Home extends Component {
     }
   
     render (){
-        const wsUrl = window.location.hostname === 'localhost' ? '47.94.194.143' : '47.94.194.143' ;
+        const wsUrl = window.location.hostname === 'localhost' ? 'www.coinex8.com' : window.location.hostname ;
         const imgList = this.state.carouselData.map( ( item ) => {
           return <img  
                         src={item.imgUrl} 
@@ -193,7 +193,7 @@ class Home extends Component {
                         />
                      {/* 交易区websocket   47.94.84.21    47.94.194.143  ws://www.lyy.com/coinex-interface/index*/}
                      <Websocket 
-                                url={`ws://${wsUrl}/coinex-interface/index`}
+                                url={`wss://${wsUrl}/coinex-interface/index`}
                                 onMessage={this.areaHandleData}
                                 onOpen={this.areaHandleOpen}
                                 ref={

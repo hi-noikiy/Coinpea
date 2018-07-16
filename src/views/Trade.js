@@ -1073,7 +1073,7 @@ class Trade extends Component {
         const buy =  this.state.data.get('buy').toArray();
         const sale =  this.state.data.get('sale').toArray();
         const record = this.state.data.get('record');
-        const wsUrl = window.location.hostname === 'localhost' ? '47.94.194.143' :  '47.94.194.143' ;
+        const wsUrl = window.location.hostname === 'localhost' ? 'www.coinex8.com' :  window.location.hostname ;
         const ty = this.state.data.get('record')[0]? this.state.data.get('record')[0].ty:-1;
       
         return (
@@ -1249,7 +1249,7 @@ class Trade extends Component {
               { 
                   this.state.wsLock?
                     <Websocket 
-                        url={`ws://${wsUrl}/coinex-interface/trade`}
+                        url={`wss://${wsUrl}/coinex-interface/trade`}
                         onMessage={this.handleData}
                         onOpen={this.handleOpen}
                         ref={
@@ -1260,7 +1260,7 @@ class Trade extends Component {
               }
                 {/* 交易区websocket */}
                <Websocket 
-                        url={`ws://${wsUrl}/coinex-interface/index`}
+                        url={`wss://${wsUrl}/coinex-interface/index`}
                         onMessage={this.areaHandleData}
                         onOpen={this.areaHandleOpen}
                         ref={

@@ -84,7 +84,7 @@
   },
   "proxy": {
     "/coinex-interface": {
-      "target": "http://47.94.194.143",
+      "target": "https://www.coinex8.com",
       "changeOrigin": true,
       "secure": false
     }
