@@ -199,7 +199,6 @@ const MyRouter = (props) => (
                
                 <Switch location={props.location}  >
                     <Route path="/" component={AsyncHome} exact loginState={props.loginState}></Route>
-                    <Route path="/ex" component={AsyncHome} exact loginState={props.loginState}></Route>
                     <Route path="/trade"   component={AsyncTrade} ></Route>
                     <Route path="/klineTrade"  component={AsyncKlineTrade}></Route>
                     <Route path="/Coin"  component={AsyncCoin}></Route>
