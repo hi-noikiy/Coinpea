@@ -21,7 +21,7 @@ import intl from 'react-intl-universal';
             'showfLink': true,
             'siteInfo': {},
             links:[],
-            orderLinks:[{name:''}, {name:''},{name:''},{name:''}]
+            orderLinks:[{name:'',url:'https://twitter.com/Coinex8Offcial/'}, {name:'',url:'https://www.facebook.com/Coinex8Offcial/'},{name:'',url:'https://t.me/coinex8'}]
         }
     }
   
