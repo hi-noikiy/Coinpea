@@ -281,7 +281,7 @@ export class MyInvite extends Component {
                 <li key={index}>
                     <div className="li1">
                     <p>{this.rankIndex(index)}</p>
-                    <p className="colorH">{item.userName}</p>
+                    <p className="colorH">{item.userName.slice(0,3)}****{item.userName.slice(-9)}</p>
                     </div>
                     <div className="li2">
                     <p>{intl.get('获得佣金')}</p>
