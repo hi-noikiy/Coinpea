@@ -127,7 +127,7 @@ import './TradeTabs.scss';
                                         onClick={(e)=>{this.select(e, item, this.props.areaIndex)}}
                                  />
                             </td>
-                            <td style={{textAlign:'left'}} >
+                            <td style={{textAlign:'left', lineHeight:'60px'}} >
                                 <Avatar
                                     src={item.url}
                                     style={{ verticalAlign: 'middle', marginRight:10 }}  />
