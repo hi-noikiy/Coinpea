@@ -69,7 +69,7 @@ import intl from 'react-intl-universal';
     }
     
     render() {
-
+        console.log(this.props.links)
          //关于我们
         const Links = this.props.links.map( (item, index) => {
             return <Link to={'/site?index='+(index)} key={index.toString()}>{item.typeName}</Link>
