@@ -4,10 +4,12 @@
 import React from 'react';
 import { withRouter,Link } from 'react-router-dom';
 import './Footer.scss';
-import { Divider, BackTop } from 'antd';
+import { Divider, BackTop, Modal, Button } from 'antd';
 import {fromJS, is} from 'immutable';
 import { _LocalStorage } from '../utils/index';
 import intl from 'react-intl-universal';
+import apple from '../assets/QRcode.jpeg';
+
 //api
 //import { getLink, getSiteInfo , getSite }  from '../api/home';
 
@@ -51,6 +53,26 @@ import intl from 'react-intl-universal';
             }
           }
           return false;
+    }
+    // dialog
+    showModal = () => {
+      this.setState({
+        visible: true,
+      });
+    }
+
+    handleOk = (e) => {
+      console.log(e);
+      this.setState({
+        visible: false,
+      });
+    }
+
+    handleCancel = (e) => {
+      console.log(e);
+      this.setState({
+        visible: false,
+      });
     }
 
   /*   getInfo = async (fn, key) => {
@@ -110,6 +132,22 @@ import intl from 'react-intl-universal';
                         <div className="footer-bottom-r">{flinks}</div>
                     </div>*/}
                </div>
+               <Button className='joinT' style={{borderRadius:'26px'}} onClick={this.showModal}>加入电报群</Button>
+               <Modal
+                  visible={this.state.visible}
+                  onOk={this.handleOk}
+                  onCancel={this.handleCancel}
+                  footer={[
+                    <Button className="btn1" key="back" onClick={this.handleCancel}><a href="https://t.me/coinex8">加入Telegram电报群</a></Button>,
+                    <Button className="btn2" key="submit" type="primary" onClick={this.handleOk}>
+                      确定
+                    </Button>,
+                  ]}
+                >
+                  <h1 style={{fontSize: '18px'}}>内测中，公测即将开启</h1>
+                  <p><img style={{width:'300px', height:'300px'}} src={apple} alt=""/></p>
+                  <p style={{color:'#fff',lineHeight:'50px'}}>扫码添加官方微信，进官方社群</p>
+                </Modal>
                <BackTop />
             </footer>
         )
