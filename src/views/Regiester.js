@@ -72,6 +72,7 @@ class RegisterForm extends React.Component {
         this.setState({bool:false});
          if(res.status === 110006){  //注册成功
             this.setState({visible:true})
+            window.location.href='./'
 				}else{
 					message.info(res.msg);
 					this.setState({
