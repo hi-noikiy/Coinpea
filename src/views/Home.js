@@ -244,7 +244,7 @@ class Home extends Component {
                   ]}
                 >
                   <h1 style={{fontSize: '18px'}}>内测中，公测即将开启</h1>
-                  <p><img src={apple} alt=""/></p>
+                  <p><img style={{width:'300px', height:'300px'}} src={apple} alt=""/></p>
                   <p style={{color:'#fff',lineHeight:'50px'}}>扫码添加官方微信，进官方社群</p>
                 </Modal>
               
