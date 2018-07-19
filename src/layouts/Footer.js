@@ -134,6 +134,7 @@ import apple from '../assets/QRcode.jpeg';
                </div>
                <Button className='joinT' style={{borderRadius:'26px'}} onClick={this.showModal}>加入电报群</Button>
                <Modal
+                  className="joinT-model"
                   visible={this.state.visible}
                   onOk={this.handleOk}
                   onCancel={this.handleCancel}

@@ -126,8 +126,7 @@
         }
     }
 }
-   .ant-modal-content {
-        background: #222226;
+    .joinT-model {
         text-align: center;
         border-radius: 20px !important;
         h1 {
@@ -135,29 +134,32 @@
             color: #fff;
             line-height: 70px;
         }
-
-    }
-    .ant-modal-footer {
-        border-top: none;
-        display: flex;
-        flex-direction: column;
-    }
-    .ant-modal-footer .btn1 {
-        border: 1px solid #23bd68 !important;
-        color: #fff;
-        background: #222226;
-        margin-bottom: 20px;
-        border-radius: 4px !important;
-    }
-    .ant-modal-footer .btn2 {
-        background: #23bd68;
-        color: #222226;
-        margin-left: 0;
-        border-radius: 4px !important;
-        margin-bottom: 20px;
-    }
-    .ant-modal-footer {
-        padding: 10px 45px;
+        .ant-modal-content {
+            background: #222226;
+            
+        }
+        .ant-modal-footer {
+            border-top: none;
+            display: flex;
+            flex-direction: column;
+        }
+        .ant-modal-footer .btn1 {
+            border: 1px solid #23bd68 !important;
+            color: #fff;
+            background: #222226;
+            margin-bottom: 20px;
+            border-radius: 4px !important;
+        }
+        .ant-modal-footer .btn2 {
+            background: #23bd68;
+            color: #222226;
+            margin-left: 0;
+            border-radius: 4px !important;
+            margin-bottom: 20px;
+        }
+        .ant-modal-footer {
+            padding: 10px 45px;
+        }
     }
     .joinT {
         background: #23bd68;
@@ -177,3 +179,4 @@
         background: #23bd68;
         color: #fff;
     }
+    
