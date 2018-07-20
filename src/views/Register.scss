@@ -1,6 +1,11 @@
 /* 
     注册页样式
 */
+
+*:not(input, textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
 @mixin boxYt{
   // width: 1200px;
   // margin: 40px auto;

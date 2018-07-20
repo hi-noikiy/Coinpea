@@ -318,13 +318,13 @@ class Nav extends React.Component {
                                                                      onClick={this.addClassName} 
                                                             >{intl.get('委托管理')}
                                                             </NavLink>
-                                                            {/*<NavLink
-                                                                     to="/assets"
+                                                            <NavLink
+                                                                     to="/"
                                                                      className="animated  nav-name" 
                                                                      activeClassName="nav-active" 
                                                                      exact onClick={this.addClassName} 
-                                                            >{intl.get('资产管理')}
-                                                            </NavLink>*/}
+                                                            >{intl.get('提交工单')}
+                                                            </NavLink>
                                                             <div className="user-info-wrap">
                                                                 <Popover content={content} title={title}>
                                                                     <img src={require('./../assets/01_02.portrait01.png')} alt='' width="18" height="18" style={{marginRight:'8px'}}/>
