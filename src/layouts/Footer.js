@@ -9,6 +9,8 @@ import {fromJS, is} from 'immutable';
 import { _LocalStorage } from '../utils/index';
 import intl from 'react-intl-universal';
 import apple from '../assets/QRcode.jpeg';
+import GZH from '../assets/GZH.jpeg';
+import Tcoinex from '../assets/Tcoinex8.png';
 
 //api
 //import { getLink, getSiteInfo , getSite }  from '../api/home';
@@ -115,6 +117,9 @@ import apple from '../assets/QRcode.jpeg';
                                 <p>{intl.get("客服支持")}：{this.props.siteInfo.serviceEmail}</p>
                                 <p>{intl.get("市场合作")}：{this.props.siteInfo.businessEmail}</p>
                             </div>
+                            <div className='footer-top-m'>
+                                <img src={GZH} alt=""/>
+                            </div>
                             <div className="footer-top-r">
                                 <div  className="footer-logo"><a href="/" style={{color:'transparent'}}>EX</a></div>
                                 <p>{this.props.siteInfo.copyrightInfo}</p>
@@ -132,7 +137,7 @@ import apple from '../assets/QRcode.jpeg';
                         <div className="footer-bottom-r">{flinks}</div>
                     </div>*/}
                </div>
-               <Button className='joinT' style={{borderRadius:'26px'}} onClick={this.showModal}>加入电报群</Button>
+               <Button className='joinT' style={{borderRadius:'26px'}}><a href="https://t.me/coinex8"><img src={Tcoinex} alt=""/>官方Telegram群</a></Button>
                <Modal
                   className="joinT-model"
                   visible={this.state.visible}

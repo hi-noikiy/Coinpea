@@ -294,7 +294,7 @@ class Nav extends React.Component {
                                     exact
                                     onClick={this.removeClass}  
                                     className={cs("animated  nav-name")}
-                                    activeClassName="nav-active">{intl.get('邀请')}</NavLink> 
+                                    activeClassName="nav-active">{intl.get('钱包')}</NavLink> 
                             </div>
                             <div className="nav-right">
                                 {

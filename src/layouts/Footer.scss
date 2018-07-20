@@ -33,6 +33,15 @@
                     color:#8D9FB4;
                 }
             }
+            .footer-top-m {
+                position: relative;
+                img {
+                    width: 100px;
+                    position: absolute;
+                    left: -70px;
+                    top: 10px;
+                }
+            }
             .footer-top-r{
                 .footer-logo{
                    width:100%;
@@ -125,6 +134,12 @@
             }
         }
     }
+    .ant-btn {
+        border-radius: 26px !important;
+        i {
+            background: url('../assets/01_01.contact_icon0301.svg') no-repeat 100% 100%;
+        }
+    }
 }
     .joinT-model {
         text-align: center;
@@ -162,21 +177,30 @@
         }
     }
     .joinT {
-        background: #23bd68;
+        background: #00b07c;
         color: #fff;
         position: fixed;
-        right: 0;
-        bottom: 250px;
+        right: 20px;
+        bottom: 20px;
         border-radius: 26px !important;
-        width: 130px;
-        height: 40px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-weight: 700;
+        height: 47px;
+        line-height: 47px;
+        font-size: 14px;
+        img {
+            width: 20px;
+            margin-right: 8px;
+            margin-bottom: 3px;
+        }
     }
     .joinT:hover {
-        background: #23bd68;
+        background: #00b07c;
         color: #fff;
     }
     .joinT:focus {
-        background: #23bd68;
+        background: #00b07c;
         color: #fff;
     }
     

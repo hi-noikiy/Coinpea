@@ -16,6 +16,8 @@ import HomeTabsList from '../components/home/HomeTabsList';
 import MarKetLine from '../components/home/MarketLine';
 import Advertising from '../components/home/Advertising';
 import Banner from '../components/home/Banner';
+import apple from '../assets/QRcode.jpeg';
+
 
 //action
 import { 
@@ -51,6 +53,7 @@ class Home extends Component {
     }
     
     componentDidMount() {
+        this.showModal();
         this.getCarousel();
         const wsUrl = window.location.hostname;
         this.setState({
@@ -67,6 +70,27 @@ class Home extends Component {
                 this.refWebSocketCoinHome.state.ws.close();
           } */
           
+    }
+
+    // dialog
+    showModal = () => {
+      this.setState({
+        visible: true,
+      });
+    }
+
+    handleOk = (e) => {
+      console.log(e);
+      this.setState({
+        visible: false,
+      });
+    }
+
+    handleCancel = (e) => {
+      console.log(e);
+      this.setState({
+        visible: false,
+      });
     }
 
     //获取首页轮播
@@ -211,7 +235,22 @@ class Home extends Component {
                
                     <Advertising  />
                 </div>
-                
+                <Modal
+                  className="joinT-model"
+                  visible={this.state.visible}
+                  onOk={this.handleOk}
+                  onCancel={this.handleCancel}
+                  footer={[
+                    <Button className="btn1" key="back" onClick={this.handleCancel}><a href="https://t.me/coinex8">加入Telegram电报群</a></Button>,
+                    <Button className="btn2" key="submit" type="primary" onClick={this.handleOk}>
+                      确定
+                    </Button>,
+                  ]}
+                >
+                  <h1 style={{fontSize: '18px'}}>内测中，公测即将开启</h1>
+                  <p><img style={{width:'300px', height:'300px'}} src={apple} alt=""/></p>
+                  <p style={{color:'#fff',lineHeight:'50px'}}>扫码添加官方微信，进官方社群</p>
+                </Modal>
               
             </div>
         )

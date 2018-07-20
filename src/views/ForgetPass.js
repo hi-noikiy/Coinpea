@@ -64,12 +64,11 @@ class RegisterForm extends React.Component {
     };
     
     return (
-      <div className="regist_yt"> 
+      <div className="regist_yt" style={{ display:'flex', flexDirection: 'column', alignItems: 'center'}}> 
         <p className="registTip">{intl.get('找回密码')}</p>   
         <Form onSubmit={this.handleSubmit} className="registForm" >
           <FormItem
             {...formItemLayout}
-            label={intl.get('邮箱账号')}
           >
             {getFieldDecorator('email', {
               rules: [{
@@ -81,7 +80,6 @@ class RegisterForm extends React.Component {
           </FormItem>
           <FormItem
             {...formItemLayout}
-            label={intl.get('验证码')}
             className="code_yt"
           >
             {getFieldDecorator('captcha', {
@@ -95,11 +93,11 @@ class RegisterForm extends React.Component {
             <img src={this.state.img} className="codePic" onClick={this.changeCode} alt=""/>
           </FormItem>
           
-          <FormItem {...tailFormItemLayout}>
+          <FormItem>
             <Button type="primary" htmlType="submit" className="regist_btn" disabled={this.state.bool}>{intl.get('下一步')}</Button>
           </FormItem>
           <FormItem>
-            <p className="goLogin ant-col-sm-offset-8 ant-col-sm-16" style={{textAlign:'center'}}>{intl.get('已有账号')}？<Link to="/login">{intl.get('登录')}</Link></p>
+            <p className="goLogin ant-col-sm-16" style={{textAlign:'right'}}>{intl.get('已有账号')}？<Link to="/login">{intl.get('登录')}</Link></p>
           </FormItem>
 
         </Form>
