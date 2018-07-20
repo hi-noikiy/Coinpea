@@ -111,8 +111,8 @@ import './TradeTabs.scss';
     }
 
     render() {
-        
           const { data } = this.props;
+        console.log(data)
        
          // const { checkedArr } = this.state;
         

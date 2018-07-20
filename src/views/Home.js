@@ -241,7 +241,7 @@ class Home extends Component {
                   onOk={this.handleOk}
                   onCancel={this.handleCancel}
                   footer={[
-                    <Button className="btn1" key="back" onClick={this.handleCancel}><a href="https://t.me/coinex8">加入Telegram电报群</a></Button>,
+                    <Button className="btn1" key="back" onClick={this.handleCancel}><a href="https://t.me/coinex8">Community</a></Button>,
                     <Button className="btn2" key="submit" type="primary" onClick={this.handleOk}>
                       确定
                     </Button>,

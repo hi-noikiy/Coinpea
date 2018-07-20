@@ -137,7 +137,7 @@ import Tcoinex from '../assets/Tcoinex8.png';
                         <div className="footer-bottom-r">{flinks}</div>
                     </div>*/}
                </div>
-               <Button className='joinT' style={{borderRadius:'26px'}}><a href="https://t.me/coinex8"><img src={Tcoinex} alt=""/>官方Telegram群</a></Button>
+               <Button className='joinT' style={{borderRadius:'26px'}}><a href="https://t.me/coinex8"><img src={Tcoinex} alt=""/>{intl.get("官方Telegram群")}</a></Button>
                <Modal
                   className="joinT-model"
                   visible={this.state.visible}

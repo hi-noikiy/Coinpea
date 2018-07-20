@@ -92,9 +92,9 @@ export class MyInvite extends Component {
     }
 
     componentDidMount() {
-        var script = document.createElement('script');
-        script.src = "http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=408841";
-        document.body.appendChild(script);
+        // var script = document.createElement('script');
+        // script.src = "http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=408841";
+        // document.body.appendChild(script);
         this.myInvite()
         this.myInviteBanner()
         this.myInviteRank()
@@ -124,6 +124,7 @@ export class MyInvite extends Component {
     }
     myInvite = async ()=>{
         const res= await myInvite();
+        console.log(res)
         if(res.status === 1){
             if(res.data.inviteList){
                 this.setState({
@@ -372,8 +373,8 @@ export class MyInvite extends Component {
                     <div className="rule">
                       <h4>{intl.get("活动细则")}</h4>
                       <ul>
-                          <li>•<span>{intl.get('细则1')}</span></li>
-                          <li>•<span>{intl.get('细则2')}</span></li>
+                          <li>•<span style={{color:'red'}}>{intl.get('细则1')}</span></li>
+                          <li>•<span style={{color:'red'}}>{intl.get('细则2')}</span></li>
                           <li>•<span>{intl.get('细则3')}</span></li>
                           <li>•<span>{intl.get('细则4')}</span></li>
                       </ul>

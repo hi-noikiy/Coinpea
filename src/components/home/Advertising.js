@@ -68,7 +68,7 @@ export default class Advertising extends React.PureComponent {
                     </div>
                 </div>*/}
                 <div className='advertising-top'>
-                    <h1>Core Advertage</h1>
+                    <h1>{intl.get('优势')}</h1>
                 </div>
                 <div className="advertising-bottom">
                     {DLlist}
