@@ -103,7 +103,7 @@ export class MyInvite extends Component {
     }
     myInviteRank = async ()=>{
         const res= await myInviteRank();
-      
+        console.log(res)
         if(res.status === 1){
             this.setState({
                 data3:res.data
@@ -113,6 +113,7 @@ export class MyInvite extends Component {
 
     myInviteBanner= async ()=>{
         const res=await myInviteBanner();
+        console.log(res)
         if(res.status === 1){
           
             this.setState({
@@ -318,6 +319,11 @@ export class MyInvite extends Component {
                           <li>
                               <h4><img src={commission} alt='' /><span>{intl.get("获得返佣")}（BTC）</span></h4>
                               <span>{this.state.commission}</span>
+                          </li>
+                          <li style={{display:'flex',flexDirection:'column'}}>
+                              <h4><img src={commission} alt='' /><span>{intl.get("返佣比例")}</span></h4>
+                              <span style={{fontSize:'12px',textAlign:'left'}}>一级{this.state.commission}</span>
+                              <span style={{fontSize:'12px',textAlign:'left'}}>二级{this.state.commission}</span>
                           </li>
                         </ul>
                       </div>

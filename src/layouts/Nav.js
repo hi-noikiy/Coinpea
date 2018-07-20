@@ -289,12 +289,18 @@ class Nav extends React.Component {
                                     onClick={this.removeClass}  
                                     className={cs("animated  nav-name")}
                                     activeClassName="nav-active">福利</NavLink> */}
+                                <NavLink
+                                         to="/assets"
+                                         className="animated  nav-name" 
+                                         activeClassName="nav-active" 
+                                         exact onClick={this.addClassName}>{intl.get('钱包')}
+                                </NavLink>
                                 <NavLink 
                                     to="/invited"
                                     exact
                                     onClick={this.removeClass}  
                                     className={cs("animated  nav-name")}
-                                    activeClassName="nav-active">{intl.get('钱包')}</NavLink> 
+                                    activeClassName="nav-active">{intl.get('邀请')}</NavLink> 
                             </div>
                             <div className="nav-right">
                                 {
@@ -312,13 +318,13 @@ class Nav extends React.Component {
                                                                      onClick={this.addClassName} 
                                                             >{intl.get('委托管理')}
                                                             </NavLink>
-                                                            <NavLink
+                                                            {/*<NavLink
                                                                      to="/assets"
                                                                      className="animated  nav-name" 
                                                                      activeClassName="nav-active" 
                                                                      exact onClick={this.addClassName} 
                                                             >{intl.get('资产管理')}
-                                                            </NavLink>
+                                                            </NavLink>*/}
                                                             <div className="user-info-wrap">
                                                                 <Popover content={content} title={title}>
                                                                     <img src={require('./../assets/01_02.portrait01.png')} alt='' width="18" height="18" style={{marginRight:'8px'}}/>
